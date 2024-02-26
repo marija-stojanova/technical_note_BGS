@@ -1,0 +1,5 @@
+plots_only.ipynb
+output/*
+.venv
+documents
+technical_note
