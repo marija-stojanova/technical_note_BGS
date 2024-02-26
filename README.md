@@ -17,3 +17,5 @@ The code was developped using Python 3.8.10 and Jupyter Notebooks running IPytho
 Before running the code, the necessary dependencies need to be installed using:
 
 `pip install -r requirements.txt`
+
+The main code is available in the `tictoc.ipynb` notebook, with the majority of the functions implemented in the two python files available in the folder `functions`. 
