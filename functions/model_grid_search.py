@@ -161,7 +161,7 @@ def run_and_plot_corrective_model(regressor_tic:BaseEstimator,
     y_re_re7_las_istep = all_re7['TIC'+ '_' + re6_origin]
     r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected = scatterplot_correction(x=y_chn_re7_las_istep, y=y_re_re7_las_istep, correction=y_correction_re7_las_istep.ravel(), xlabel='TIC LAS (CHN)', ylabel='TIC VT (RE7)', name='TIC RE7')
     plt.grid()
-    report.append([model_name, 'TIC', chn_origin, re6_origin, features,'LAS_RE7', 'vt_RE7', r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected])
+    report.append([model_name, 'TIC', chn_origin, re6_origin, features,'las', 'vt_RE7', r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected])
 
 
     plt.subplot(3,2,6)
@@ -170,7 +170,7 @@ def run_and_plot_corrective_model(regressor_tic:BaseEstimator,
     y_re_re7_las_istep = all_re7['TOC'+ '_' + re6_origin]
     r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected = scatterplot_correction(x=y_chn_re7_las_istep.astype(float), y=y_re_re7_las_istep.astype(float), correction=y_correction_re7_las_istep.ravel(), xlabel='TOC LAS (CHN)', ylabel='TOC VT (RE7)', name='TOC RE7')
     plt.grid()
-    report.append([model_name, 'TOC', chn_origin, re6_origin, features,'LAS_RE7', 'vt_RE7', r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected])
+    report.append([model_name, 'TOC', chn_origin, re6_origin, features,'las', 'vt_RE7', r2, bias, rmse, rpiq, slope, intercept, r2_corrected, bias_corrected, rmse_corrected, rpiq_corrected, intercept_corrected, slope_corrected])
 
 
     plt.tight_layout()
